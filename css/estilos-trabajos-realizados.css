@@ -42,6 +42,7 @@ body {
 /*Fin*/
 
 /*Header*/
+
 .menu {
 	position: absolute;
 	left: 500px;
@@ -104,6 +105,14 @@ header label {
 .menu ul li{
 	transition: 0.3s;
 	border-radius: 3px;
+}
+
+.header label {
+	font-size: 35px;
+}
+.header label:hover {
+	color: #008e5b;
+	transition: 0.5s;
 }
 /*Fin*/
 
@@ -274,28 +283,6 @@ opacity: 1;
 		display: block
 	}
 
-	/*Menu*/
-
-	.menu {
-		position: absolute;
-		background: #008e5b;
-		width: 25%;
-		margin-left: -70%;
-		border-radius: 4px;
-		box-shadow: 0 0 20px #008e5b;
-		grid-column: -5;
-	}
-	
-	.menu ul {
-		flex-direction: column;
-	}
-
-	#btn-menu:checked ~ .menu {
-		margin:0;
-		margin-left: 77.5%;
-	}
-	
-
 	/*Sidebar*/
 	.facebook-sidebar {
 		grid-column: 2/3;
@@ -304,4 +291,29 @@ opacity: 1;
 		min-width: 270px;	
 	}
 
+}
+
+@media screen and (max-width: 1104px){
+	header label {
+		display: block
+	}
+	.menu {
+		position: absolute;
+		background: #008e5b;
+		width: 25%;
+		margin-left: -120%;
+		border-radius: 4px;
+		box-shadow: 0 0 20px #008e5b;
+		grid-column: -5;
+	}
+	
+	.menu ul {
+		flex-direction: column;
+	}
+	#btn-menu:checked ~ .menu {
+		border-radius: 4px;
+		box-shadow: 4px 4px 0px #fff;
+		left: 190%;
+		top: 100%;
+	}
 }
