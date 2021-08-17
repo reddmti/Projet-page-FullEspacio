@@ -110,8 +110,8 @@ header label {
 	font-size: 35px;
 }
 .header label:hover {
-	color: #008e5b;
-	transition: 0.5s;
+	color: rgb(209, 208, 208);
+	transition: 0.3s;
 }
 /*Fin*/
 
