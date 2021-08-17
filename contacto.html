@@ -41,12 +41,15 @@
 
         <main class="contenido" >
                 <h2>Contactate con nosotros</h2><br>
-                <form name="contact" method="POST" data-netlify="true" netlify action="index.html">
+
+                <!--<form name="contact" action="https://formsubmit.co/matias.65023@gmail.com" method="POST" data-netlify="true" netlify action="index.html">-->
+                <form action="https://formsubmit.co/matias.65023@gmail.com" method="POST">
+
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="Nombre" placeholder="Escribe aquí tu nombre*" required>
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="Email" placeholder="Escribe aquí tu correo">
+                    <input type="email" id="email" name="Correo" placeholder="Escribe aquí tu correo">
 
                     <label for="telefono">Telefono:</label>
                     <input type="number" id="phone" name="Telefono" placeholder="Escribe aquí tu numero telefonico*" required>
@@ -55,6 +58,11 @@
                     <textarea id="mensaje" name="Mensaje" placeholder="Escribe aquí tu mensaje"></textarea>
 
                     <input type="submit" value="Enviar">
+
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_autoresponse" value="Muchas gracias! nos contactaremos lo antes posible">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                    <input type="hidden" name="_captcha" value="false">
 
                 </form>
         </main>
