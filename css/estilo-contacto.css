@@ -167,8 +167,14 @@ input[type="submit"]:hover{
 #texto-slidebar {
 	font-weight: lighter;
 	font-weight: bolder;
- 	font-weight: 900;
+ 	font-weight: 800;
+	 color:#fff;
+}
 
+#texto-slidebar:hover {
+	color: #000;
+	transition: 0.3s;
+	cursor: pointer;
 }
 
 .contenedor .sidebar {
